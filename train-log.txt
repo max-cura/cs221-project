@@ -1,0 +1,40 @@
+
+python3 t5_liar_train.py --use-tokenizer t5-small --use-model t5-small --dataset liar --max-length 256 --train-batch-size 128 --interval 4 --examples 1000 --model-dir t5-small-liar-1k
+BEST MODEL: t5-small-liar-1k/checkpoint-72
+{'eval_loss': 0.3281291723251343, 'eval_runtime': 0.9891, 'eval_samples_per_second': 1298.136, 'eval_steps_per_second': 11.121, 'epoch': 10.0}
+
+python3 t5_liar_train.py --use-tokenizer t5-small --use-model t5-small --dataset liar --max-length 256 --train-batch-size 128 --interval 6 --examples 5000 --model-dir t5-small-liar-5k
+BEST MODEL: t5-small-liar-5k/checkpoint-144
+{'eval_loss': 0.3185081481933594, 'eval_runtime': 0.977, 'eval_samples_per_second': 1314.275, 'eval_steps_per_second': 11.259, 'epoch': 10.0}
+
+python3 t5_liar_train.py --use-tokenizer t5-small --use-model t5-small --dataset liar --max-length 256 --train-batch-size 128 --interval 8 --examples 0 --model-dir t5-small-liar-full
+BEST MODEL: t5-small-liar-full/checkpoint-368
+{'eval_loss': 0.3125086724758148, 'eval_runtime': 1.002, 'eval_samples_per_second': 1281.409, 'eval_steps_per_second': 10.978, 'epoch': 10.0}
+
+python3 t5_liar_train.py --use-tokenizer t5-base --use-model t5-base --dataset liar --max-length 256 --train-batch-size 64 --interval 4 --examples 1000 --model-dir t5-base-liar-1k
+BEST MODEL: t5-base-liar-1k/checkpoint-44
+{'eval_loss': 0.3202810287475586, 'eval_runtime': 2.5747, 'eval_samples_per_second': 498.694, 'eval_steps_per_second': 8.156, 'epoch': 10.0}
+
+python3 t5_liar_train.py --use-tokenizer t5-base --use-model t5-base --dataset liar --max-length 256 --train-batch-size 64 --interval 12 --examples 5000 --model-dir t5-base-liar-5k
+BEST MODEL: t5-base-liar-5k/checkpoint-132
+{'eval_loss': 0.31241607666015625, 'eval_runtime': 2.5934, 'eval_samples_per_second': 495.104, 'eval_steps_per_second': 8.098, 'epoch': 10.0}
+
+python3 t5_liar_train.py --use-tokenizer t5-base --use-model t5-base --dataset liar --max-length 256 --train-batch-size 64 --interval 32 --examples 0 --model-dir t5-base-liar-full
+BEST MODEL: t5-base-liar-full/checkpoint-480
+{'eval_loss': 0.3055814802646637, 'eval_runtime': 2.6301, 'eval_samples_per_second': 488.188, 'eval_steps_per_second': 7.984, 'epoch': 10.0}
+
+python3 roberta_liar_train.py --use-tokenizer roberta-base --use-model roberta-base --dataset liar --max-length 256 --train-batch-size 64 --interval 4 --examples 1000 --model-dir roberta-base-liar-1k
+BEST MODEL: roberta-base-liar-1k/checkpoint-72
+{'eval_loss': 0.651288628578186, 'eval_runtime': 1.7215, 'eval_samples_per_second': 745.868, 'eval_steps_per_second': 12.199, 'epoch': 10.0}
+
+python3 roberta_liar_train.py --use-tokenizer roberta-base --use-model roberta-base --dataset liar --max-length 256 --train-batch-size 64 --interval 12 --examples 5000 --model-dir roberta-base-liar-5k
+BEST MODEL: roberta-base-liar-5k/checkpoint-324
+{'eval_loss': 0.6169439554214478, 'eval_runtime': 1.6966, 'eval_samples_per_second': 756.8, 'eval_steps_per_second': 12.378, 'epoch': 10.0}
+
+python3 roberta_liar_train.py --use-tokenizer roberta-base --use-model roberta-base --dataset liar --max-length 256 --train-batch-size 64 --interval 32 --examples 0 --model-dir roberta-base-liar-full
+BEST MODEL: roberta-base-liar-full/checkpoint-416
+{'eval_loss': 0.610466480255127, 'eval_runtime': 1.733, 'eval_samples_per_second': 740.928, 'eval_steps_per_second': 12.118, 'epoch': 10.0}
+
+python3 t5_liar_train.py --use-tokenizer t5-large --use-model t5-large --dataset liar --max-length 256 --train-batch-size 16 --interval 64 --examples 1000 --model-dir t5-large-liar-1k
+BEST MODEL: t5-large-liar-1k/checkpoint-64
+{'eval_loss': 0.3462272584438324, 'eval_runtime': 7.3049, 'eval_samples_per_second': 175.773, 'eval_steps_per_second': 11.088, 'epoch': 10.0}

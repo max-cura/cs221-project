@@ -1,0 +1,1130 @@
+RESULT FOR t5-small-liar-1k/checkpoint-72
+RESULT ON all DATA:
+RESULT RAW DATA TO: t5-small-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  473 |  254 | 727 |
+RESULT | AN |  250 |  306 | 556 |
+RESULT |    |  723 |  560 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |                    |
+RESULT |----+----------+----------+--------------------|
+RESULT | AP | 0.368667 | 0.197973 | 0.5666406858924397 |
+RESULT | AN | 0.194856 | 0.238504 | 0.4333593141075604 |
+RESULT |    | 0.563523 | 0.436477 |                    |
+RESULT ON true DATA:
+RESULT RAW DATA TO: t5-small-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  151 |   60 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  151 |   60 |     |
+RESULT ---> PROP
+RESULT |    |      PP |      PN |     |
+RESULT |----+---------+---------+-----|
+RESULT | AP | 0.71564 | 0.28436 | 1.0 |
+RESULT | AN | 0       | 0       | 0.0 |
+RESULT |    | 0.71564 | 0.28436 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: t5-small-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  164 |   85 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  164 |   85 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.658635 | 0.341365 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.658635 | 0.341365 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: t5-small-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  158 |  109 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  158 |  109 |     |
+RESULT ---> PROP
+RESULT |    |      PP |      PN |     |
+RESULT |----+---------+---------+-----|
+RESULT | AP | 0.59176 | 0.40824 | 1.0 |
+RESULT | AN | 0       | 0       | 0.0 |
+RESULT |    | 0.59176 | 0.40824 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: t5-small-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  102 |  112 | 214 |
+RESULT |    |  102 |  112 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.476636 | 0.523364 | 1.0 |
+RESULT |    | 0.476636 | 0.523364 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: t5-small-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  116 |  134 | 250 |
+RESULT |    |  116 |  134 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.464 | 0.536 | 1.0 |
+RESULT |    | 0.464 | 0.536 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: t5-small-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   32 |   60 | 92 |
+RESULT |    |   32 |   60 |    |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.347826 | 0.652174 | 1.0 |
+RESULT |    | 0.347826 | 0.652174 |     |
+RESULT FOR t5-small-liar-5k/checkpoint-144
+RESULT ON all DATA:
+RESULT RAW DATA TO: t5-small-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  478 |  249 | 727 |
+RESULT | AN |  226 |  330 | 556 |
+RESULT |    |  704 |  579 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |                     |
+RESULT |----+----------+----------+---------------------|
+RESULT | AP | 0.372564 | 0.194076 | 0.5666406858924397  |
+RESULT | AN | 0.17615  | 0.25721  | 0.43335931410756046 |
+RESULT |    | 0.548714 | 0.451286 |                     |
+RESULT ON true DATA:
+RESULT RAW DATA TO: t5-small-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  150 |   61 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  150 |   61 |     |
+RESULT ---> PROP
+RESULT |    |     PP |     PN |     |
+RESULT |----+--------+--------+-----|
+RESULT | AP | 0.7109 | 0.2891 | 1.0 |
+RESULT | AN | 0      | 0      | 0.0 |
+RESULT |    | 0.7109 | 0.2891 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: t5-small-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  177 |   72 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  177 |   72 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.710843 | 0.289157 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.710843 | 0.289157 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: t5-small-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  151 |  116 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  151 |  116 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.565543 | 0.434457 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.565543 | 0.434457 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: t5-small-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |   95 |  119 | 214 |
+RESULT |    |   95 |  119 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.443925 | 0.556075 | 1.0 |
+RESULT |    | 0.443925 | 0.556075 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: t5-small-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  104 |  146 | 250 |
+RESULT |    |  104 |  146 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.416 | 0.584 | 1.0 |
+RESULT |    | 0.416 | 0.584 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: t5-small-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   27 |   65 | 92 |
+RESULT |    |   27 |   65 |    |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.293478 | 0.706522 | 1.0 |
+RESULT |    | 0.293478 | 0.706522 |     |
+RESULT FOR t5-small-liar-full/checkpoint-368
+RESULT ON all DATA:
+RESULT RAW DATA TO: t5-small-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  500 |  227 | 727 |
+RESULT | AN |  210 |  346 | 556 |
+RESULT |    |  710 |  573 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |                    |
+RESULT |----+----------+----------+--------------------|
+RESULT | AP | 0.389712 | 0.176929 | 0.5666406858924395 |
+RESULT | AN | 0.163679 | 0.26968  | 0.4333593141075604 |
+RESULT |    | 0.55339  | 0.44661  |                    |
+RESULT ON true DATA:
+RESULT RAW DATA TO: t5-small-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  154 |   57 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  154 |   57 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.729858 | 0.270142 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.729858 | 0.270142 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: t5-small-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  190 |   59 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  190 |   59 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.763052 | 0.236948 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.763052 | 0.236948 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: t5-small-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  156 |  111 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  156 |  111 |     |
+RESULT ---> PROP
+RESULT |    |      PP |      PN |     |
+RESULT |----+---------+---------+-----|
+RESULT | AP | 0.58427 | 0.41573 | 1.0 |
+RESULT | AN | 0       | 0       | 0.0 |
+RESULT |    | 0.58427 | 0.41573 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: t5-small-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  103 |  111 | 214 |
+RESULT |    |  103 |  111 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.481308 | 0.518692 | 1.0 |
+RESULT |    | 0.481308 | 0.518692 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: t5-small-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |   87 |  163 | 250 |
+RESULT |    |   87 |  163 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.348 | 0.652 | 1.0 |
+RESULT |    | 0.348 | 0.652 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: t5-small-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   20 |   72 | 92 |
+RESULT |    |   20 |   72 |    |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.217391 | 0.782609 | 1.0 |
+RESULT |    | 0.217391 | 0.782609 |     |
+RESULT FOR t5-base-liar-1k/checkpoint-44
+RESULT ON all DATA:
+RESULT RAW DATA TO: t5-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  448 |  279 | 727 |
+RESULT | AN |  205 |  351 | 556 |
+RESULT |    |  653 |  630 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |                    |
+RESULT |----+----------+----------+--------------------|
+RESULT | AP | 0.349182 | 0.217459 | 0.5666406858924395 |
+RESULT | AN | 0.159782 | 0.273578 | 0.4333593141075604 |
+RESULT |    | 0.508963 | 0.491037 |                    |
+RESULT ON true DATA:
+RESULT RAW DATA TO: t5-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  142 |   69 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  142 |   69 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.672986 | 0.327014 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.672986 | 0.327014 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: t5-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  163 |   86 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  163 |   86 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.654618 | 0.345382 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.654618 | 0.345382 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: t5-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  143 |  124 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  143 |  124 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.535581 | 0.464419 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.535581 | 0.464419 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: t5-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |   89 |  125 | 214 |
+RESULT |    |   89 |  125 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.415888 | 0.584112 | 1.0 |
+RESULT |    | 0.415888 | 0.584112 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: t5-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |   98 |  152 | 250 |
+RESULT |    |   98 |  152 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.392 | 0.608 | 1.0 |
+RESULT |    | 0.392 | 0.608 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: t5-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   18 |   74 | 92 |
+RESULT |    |   18 |   74 |    |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.195652 | 0.804348 | 1.0 |
+RESULT |    | 0.195652 | 0.804348 |     |
+RESULT FOR t5-base-liar-5k/checkpoint-132
+RESULT ON all DATA:
+RESULT RAW DATA TO: t5-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  485 |  242 | 727 |
+RESULT | AN |  226 |  330 | 556 |
+RESULT |    |  711 |  572 |     |
+RESULT ---> PROP
+RESULT |    |      PP |      PN |                     |
+RESULT |----+---------+---------+---------------------|
+RESULT | AP | 0.37802 | 0.18862 | 0.5666406858924395  |
+RESULT | AN | 0.17615 | 0.25721 | 0.43335931410756046 |
+RESULT |    | 0.55417 | 0.44583 |                     |
+RESULT ON true DATA:
+RESULT RAW DATA TO: t5-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  152 |   59 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  152 |   59 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.720379 | 0.279621 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.720379 | 0.279621 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: t5-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  180 |   69 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  180 |   69 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.722892 | 0.277108 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.722892 | 0.277108 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: t5-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  153 |  114 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  153 |  114 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.573034 | 0.426966 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.573034 | 0.426966 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: t5-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  105 |  109 | 214 |
+RESULT |    |  105 |  109 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.490654 | 0.509346 | 1.0 |
+RESULT |    | 0.490654 | 0.509346 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: t5-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |   97 |  153 | 250 |
+RESULT |    |   97 |  153 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.388 | 0.612 | 1.0 |
+RESULT |    | 0.388 | 0.612 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: t5-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   24 |   68 | 92 |
+RESULT |    |   24 |   68 |    |
+RESULT ---> PROP
+RESULT |    |      PP |      PN |     |
+RESULT |----+---------+---------+-----|
+RESULT | AP | 0       | 0       | 0.0 |
+RESULT | AN | 0.26087 | 0.73913 | 1.0 |
+RESULT |    | 0.26087 | 0.73913 |     |
+RESULT FOR t5-base-liar-full/checkpoint-480
+RESULT ON all DATA:
+RESULT RAW DATA TO: t5-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  525 |  202 | 727 |
+RESULT | AN |  239 |  317 | 556 |
+RESULT |    |  764 |  519 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |                     |
+RESULT |----+----------+----------+---------------------|
+RESULT | AP | 0.409197 | 0.157443 | 0.5666406858924397  |
+RESULT | AN | 0.186282 | 0.247077 | 0.43335931410756046 |
+RESULT |    | 0.595479 | 0.404521 |                     |
+RESULT ON true DATA:
+RESULT RAW DATA TO: t5-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  156 |   55 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  156 |   55 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.739336 | 0.260664 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.739336 | 0.260664 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: t5-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  195 |   54 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  195 |   54 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.783133 | 0.216867 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.783133 | 0.216867 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: t5-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  174 |   93 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  174 |   93 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.651685 | 0.348315 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.651685 | 0.348315 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: t5-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  112 |  102 | 214 |
+RESULT |    |  112 |  102 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.523364 | 0.476636 | 1.0 |
+RESULT |    | 0.523364 | 0.476636 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: t5-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  104 |  146 | 250 |
+RESULT |    |  104 |  146 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.416 | 0.584 | 1.0 |
+RESULT |    | 0.416 | 0.584 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: t5-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   23 |   69 | 92 |
+RESULT |    |   23 |   69 |    |
+RESULT ---> PROP
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP | 0    | 0    | 0.0 |
+RESULT | AN | 0.25 | 0.75 | 1.0 |
+RESULT |    | 0.25 | 0.75 |     |
+RESULT FOR t5-large-liar-1k/checkpoint-64
+RESULT ON all DATA:
+RESULT RAW DATA TO: t5-large-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  648 |   79 | 727 |
+RESULT | AN |  425 |  131 | 556 |
+RESULT |    | 1073 |  210 |     |
+RESULT ---> PROP
+RESULT |    |       PP |        PN |                    |
+RESULT |----+----------+-----------+--------------------|
+RESULT | AP | 0.505066 | 0.0615744 | 0.5666406858924395 |
+RESULT | AN | 0.331255 | 0.102104  | 0.4333593141075604 |
+RESULT |    | 0.836321 | 0.163679  |                    |
+RESULT ON true DATA:
+RESULT RAW DATA TO: t5-large-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  190 |   21 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  190 |   21 |     |
+RESULT ---> PROP
+RESULT |    |       PP |        PN |     |
+RESULT |----+----------+-----------+-----|
+RESULT | AP | 0.900474 | 0.0995261 | 1.0 |
+RESULT | AN | 0        | 0         | 0.0 |
+RESULT |    | 0.900474 | 0.0995261 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: t5-large-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  223 |   26 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  223 |   26 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.895582 | 0.104418 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.895582 | 0.104418 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: t5-large-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  235 |   32 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  235 |   32 |     |
+RESULT ---> PROP
+RESULT |    |      PP |      PN |     |
+RESULT |----+---------+---------+-----|
+RESULT | AP | 0.88015 | 0.11985 | 1.0 |
+RESULT | AN | 0       | 0       | 0.0 |
+RESULT |    | 0.88015 | 0.11985 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: t5-large-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  171 |   43 | 214 |
+RESULT |    |  171 |   43 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.799065 | 0.200935 | 1.0 |
+RESULT |    | 0.799065 | 0.200935 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: t5-large-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  198 |   52 | 250 |
+RESULT |    |  198 |   52 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.792 | 0.208 | 1.0 |
+RESULT |    | 0.792 | 0.208 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: t5-large-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   56 |   36 | 92 |
+RESULT |    |   56 |   36 |    |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.608696 | 0.391304 | 1.0 |
+RESULT |    | 0.608696 | 0.391304 |     |
+RESULT FOR roberta-base-liar-1k/checkpoint-72
+RESULT ON all DATA:
+RESULT RAW DATA TO: roberta-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  470 |  257 | 727 |
+RESULT | AN |  218 |  338 | 556 |
+RESULT |    |  688 |  595 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |                    |
+RESULT |----+----------+----------+--------------------|
+RESULT | AP | 0.366329 | 0.200312 | 0.5666406858924395 |
+RESULT | AN | 0.169914 | 0.263445 | 0.4333593141075604 |
+RESULT |    | 0.536243 | 0.463757 |                    |
+RESULT ON true DATA:
+RESULT RAW DATA TO: roberta-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  143 |   68 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  143 |   68 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.677725 | 0.322275 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.677725 | 0.322275 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  170 |   79 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  170 |   79 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.682731 | 0.317269 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.682731 | 0.317269 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  157 |  110 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  157 |  110 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.588015 | 0.411985 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.588015 | 0.411985 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |   96 |  118 | 214 |
+RESULT |    |   96 |  118 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.448598 | 0.551402 | 1.0 |
+RESULT |    | 0.448598 | 0.551402 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: roberta-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  100 |  150 | 250 |
+RESULT |    |  100 |  150 |     |
+RESULT ---> PROP
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  0   |  0   | 0.0 |
+RESULT | AN |  0.4 |  0.6 | 1.0 |
+RESULT |    |  0.4 |  0.6 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: roberta-base-liar-1k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   22 |   70 | 92 |
+RESULT |    |   22 |   70 |    |
+RESULT ---> PROP
+RESULT |    |      PP |      PN |     |
+RESULT |----+---------+---------+-----|
+RESULT | AP | 0       | 0       | 0.0 |
+RESULT | AN | 0.23913 | 0.76087 | 1.0 |
+RESULT |    | 0.23913 | 0.76087 |     |
+RESULT FOR roberta-base-liar-5k/checkpoint-324
+RESULT ON all DATA:
+RESULT RAW DATA TO: roberta-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  479 |  248 | 727 |
+RESULT | AN |  188 |  368 | 556 |
+RESULT |    |  667 |  616 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |                    |
+RESULT |----+----------+----------+--------------------|
+RESULT | AP | 0.373344 | 0.193297 | 0.5666406858924395 |
+RESULT | AN | 0.146532 | 0.286828 | 0.4333593141075604 |
+RESULT |    | 0.519875 | 0.480125 |                    |
+RESULT ON true DATA:
+RESULT RAW DATA TO: roberta-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  143 |   68 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  143 |   68 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.677725 | 0.322275 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.677725 | 0.322275 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  181 |   68 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  181 |   68 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.726908 | 0.273092 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.726908 | 0.273092 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  155 |  112 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  155 |  112 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.580524 | 0.419476 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.580524 | 0.419476 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |   90 |  124 | 214 |
+RESULT |    |   90 |  124 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.420561 | 0.579439 | 1.0 |
+RESULT |    | 0.420561 | 0.579439 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: roberta-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |   79 |  171 | 250 |
+RESULT |    |   79 |  171 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.316 | 0.684 | 1.0 |
+RESULT |    | 0.316 | 0.684 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: roberta-base-liar-5k-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   19 |   73 | 92 |
+RESULT |    |   19 |   73 |    |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.206522 | 0.793478 | 1.0 |
+RESULT |    | 0.206522 | 0.793478 |     |
+RESULT FOR roberta-base-liar-full/checkpoint-416
+RESULT ON all DATA:
+RESULT RAW DATA TO: roberta-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  564 |  163 | 727 |
+RESULT | AN |  268 |  288 | 556 |
+RESULT |    |  832 |  451 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |                    |
+RESULT |----+----------+----------+--------------------|
+RESULT | AP | 0.439595 | 0.127046 | 0.5666406858924395 |
+RESULT | AN | 0.208885 | 0.224474 | 0.4333593141075604 |
+RESULT |    | 0.64848  | 0.35152  |                    |
+RESULT ON true DATA:
+RESULT RAW DATA TO: roberta-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  174 |   37 | 211 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  174 |   37 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.824645 | 0.175355 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.824645 | 0.175355 |     |
+RESULT ON mostly_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  203 |   46 | 249 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  203 |   46 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.815261 | 0.184739 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.815261 | 0.184739 |     |
+RESULT ON half_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |  187 |   80 | 267 |
+RESULT | AN |    0 |    0 | 0   |
+RESULT |    |  187 |   80 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0.700375 | 0.299625 | 1.0 |
+RESULT | AN | 0        | 0        | 0.0 |
+RESULT |    | 0.700375 | 0.299625 |     |
+RESULT ON barely_true DATA:
+RESULT RAW DATA TO: roberta-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  127 |   87 | 214 |
+RESULT |    |  127 |   87 |     |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.593458 | 0.406542 | 1.0 |
+RESULT |    | 0.593458 | 0.406542 |     |
+RESULT ON false DATA:
+RESULT RAW DATA TO: roberta-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |     |
+RESULT |----+------+------+-----|
+RESULT | AP |    0 |    0 | 0   |
+RESULT | AN |  113 |  137 | 250 |
+RESULT |    |  113 |  137 |     |
+RESULT ---> PROP
+RESULT |    |    PP |    PN |     |
+RESULT |----+-------+-------+-----|
+RESULT | AP | 0     | 0     | 0.0 |
+RESULT | AN | 0.452 | 0.548 | 1.0 |
+RESULT |    | 0.452 | 0.548 |     |
+RESULT ON pants_fire DATA:
+RESULT RAW DATA TO: roberta-base-liar-full-test-predict.csv
+RESULT Confusion matrix
+RESULT ==============================
+RESULT ---> RAW
+RESULT |    |   PP |   PN |    |
+RESULT |----+------+------+----|
+RESULT | AP |    0 |    0 | 0  |
+RESULT | AN |   28 |   64 | 92 |
+RESULT |    |   28 |   64 |    |
+RESULT ---> PROP
+RESULT |    |       PP |       PN |     |
+RESULT |----+----------+----------+-----|
+RESULT | AP | 0        | 0        | 0.0 |
+RESULT | AN | 0.304348 | 0.695652 | 1.0 |
+RESULT |    | 0.304348 | 0.695652 |     |

@@ -3,9 +3,9 @@ import os
 import numpy as np
 import torch
 from torch.utils.data.dataloader import DataLoader
-from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments, AutoTokenizer, DataCollatorForSeq2Seq, \
-    AutoModelForSeq2SeqLM, T5ForConditionalGeneration
-from datasets import load_dataset
+from transformers import AutoTokenizer, RobertaForSequenceClassification, Trainer, \
+        TrainingArguments
+from datasets import load_dataset, Features, ClassLabel
 from argparse import ArgumentParser
 
 torch.backends.cuda.matmul.allow_tf32 = True
@@ -60,18 +60,19 @@ def ds_local_tokenize_for_training(examples):
             examples['job_title'],examples['state_info'],examples['party_affiliation'],
             examples['context'])
     ]
-    label = ["false" if label in [0, 5, 4] else "true" for label in examples["gold_mc"]]
+    label = [0 if label in [0, 5, 4] else 1 for label in examples["gold_mc"]]
 
     model_inputs = ds_tokenize(tokenizer, text=text_input, max_length=args.max_length)
-    labels = ds_tokenize(tokenizer, text_target=label, max_length=20)
-    model_inputs["labels"] = labels['input_ids']
+    model_inputs['labels'] = label
     return model_inputs
 
 print("="*60)
 print("TOKENIZING")
 
+# ROBERTA
 dataset = dataset.rename_column('label','gold_mc')
 dataset = dataset.map(ds_local_tokenize_for_training, batched=True)
+dataset = dataset.cast_column('labels', ClassLabel(num_classes=2,names=['false','true']))
 
 #longest_item = max(dataset['train']['prompt'], key=lambda x: len(x))
 #iids = ds_tokenize(tokenizer, args.max_length, text=longest_item).input_ids
@@ -86,7 +87,7 @@ if args.examples > 0:
     print(f"SELECTING {args.examples} ROWS FROM TRAINING DATASET")
     training_data = training_data.select(range(args.examples))
 
-trainer_args = Seq2SeqTrainingArguments(
+trainer_args = TrainingArguments(
     output_dir=args.model_dir,
     evaluation_strategy="steps",
     eval_steps=args.interval,
@@ -94,29 +95,28 @@ trainer_args = Seq2SeqTrainingArguments(
     logging_steps=args.interval,
     save_strategy="steps",
     save_steps=args.interval,
-    # For AdamW on T5, use 3e-4 instead of e.g. 4e-5
-    learning_rate=3e-4,
-    #learning_rate=4e-5,
+    # orig: 4e-5
+    learning_rate=2e-5,
     per_device_train_batch_size=args.train_batch_size,
     per_device_eval_batch_size=args.train_batch_size,
     weight_decay=0.01,
     save_total_limit=3,
     num_train_epochs=10,
-    predict_with_generate=True,
     load_best_model_at_end=True,
     metric_for_best_model='eval_loss',
     report_to=["tensorboard"],
     dataloader_num_workers=8,
 )
 
-data_collator = DataCollatorForSeq2Seq(tokenizer)
 
-trainer = Seq2SeqTrainer(
-    model_init=lambda: T5ForConditionalGeneration.from_pretrained(args.use_model),
+trainer = Trainer(
+    model_init=lambda: RobertaForSequenceClassification.from_pretrained(
+        args.use_model,
+        num_labels=2
+    ),
     args=trainer_args,
     train_dataset=training_data,
     eval_dataset=validation_data,
-    data_collator=data_collator,
     tokenizer=tokenizer,
 )
 

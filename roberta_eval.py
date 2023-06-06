@@ -2,7 +2,7 @@ import argparse
 import torch
 from tqdm import tqdm
 import transformers
-from transformers import T5ForConditionalGeneration, GenerationConfig, T5TokenizerFast
+from transformers import RobertaForSequenceClassification, GenerationConfig, RobertaTokenizerFast
 #import torch.utils.data.DataLoader
 from torch.utils.data import DataLoader
 import evaluate
@@ -45,11 +45,11 @@ def LIAR_prepare_dataset():
                 examples['job_title'],examples['state_info'],examples['party_affiliation'],
                 examples['context'])
         ]
-        label = ["false" if label in [0, 5, 4] else "true" for label in examples["gold"]]
+        label = [0 if label in [0, 5, 4] else 1 for label in examples["gold"]]
 
         model_inputs = tokenize_generic(tokenizer, text=text_input, max_length=args.max_length)
-        labels = tokenize_generic(tokenizer, text_target=label, max_length=20)
-        model_inputs["labels"] = labels['input_ids']
+        #labels = tokenize_generic(tokenizer, text_target=label, max_length=20)
+        #model_inputs["labels"] = labels['input_ids']
         model_inputs["gold_tf"] = label
         return model_inputs
     dataset = datasets.load_dataset('liar')
@@ -67,7 +67,7 @@ DATASETS = {
 print("=" * 60)
 print("Initializing")
 
-tokenizer = T5TokenizerFast.from_pretrained(
+tokenizer = RobertaTokenizerFast.from_pretrained(
     args.use_tokenizer,
     model_max_length=args.max_length,
     padding=True,
@@ -76,7 +76,7 @@ tokenizer = T5TokenizerFast.from_pretrained(
 
 if not os.path.isdir(args.model):
     raise ValueError(f"bad path for model")
-model = T5ForConditionalGeneration.from_pretrained(args.model).to(device)
+model = RobertaForSequenceClassification.from_pretrained(args.model).to(device)
 
 if args.dataset not in DATASETS:
     raise ValueError(f"bad dataset")
@@ -86,12 +86,8 @@ print(dataset)
 
 device_dataset = dataset.with_format('torch')
 predictions = torch.zeros(
-        (device_dataset['test']['input_ids'].shape[0], args.max_length + 1),
-        dtype=torch.int
-)
-generation_config = GenerationConfig(
-        max_new_tokens = args.max_length,
-        max_length = args.max_length,
+        (device_dataset['test']['input_ids'].shape[0]),
+        dtype=torch.int64
 )
 def batched_range_iter(start, end, batch_size):
     batch_start = start
@@ -107,28 +103,20 @@ with torch.no_grad():
             total=batch_count):
         batch_inputs = device_dataset['test']['input_ids'][batch_start:batch_end].to(device)
         batch_attnmsk = device_dataset['test']['attention_mask'][batch_start:batch_end].to(device)
-        batch_predictions = model.generate(
+        batch_logits = model(
             input_ids=batch_inputs,
-            attention_mask=batch_attnmsk,
-            do_sample=False,
-            generation_config=generation_config
-        ).to('cpu')
-        predictions[batch_start:batch_end, 0:batch_predictions.shape[1]] \
-            = batch_predictions[:, :].type(dtype=torch.int)
+            attention_mask=batch_attnmsk
+        ).logits
+        predicted_classes = batch_logits.argmax(dim=1)
+        #print(predicted_classes)
+        predictions[batch_start:batch_end] \
+            = predicted_classes.type(dtype=torch.int)
 
 print("")
 print("="*60)
-print("Decoding predictions")
+print("Calculating confusion matrix")
 
-predictions_decoded = tokenizer.batch_decode(predictions, skip_special_tokens=True)
-
-dataset['test'] = dataset['test'].add_column('predicted',predictions_decoded)
-
-print(dataset)
-
-print("")
-print("="*60)
-print("Calculating confusion matrices")
+dataset['test'] = dataset['test'].add_column('predicted', predictions.tolist())
 
 def evaluate_on_ds(dataset):
     TP=0
@@ -136,15 +124,17 @@ def evaluate_on_ds(dataset):
     TN=0
     FN=0
     #print(dataset)
+    true=1
+    false=0
     for (pred,gold) in zip(dataset['test']['predicted'], dataset['test']['gold_tf']):
         #print(f"P:{pred},G:{gold}")
-        if pred=='true' and gold=='true':
+        if pred==true and gold==true:
             TP += 1
-        elif pred=='true' and gold=='false':
+        elif pred==true and gold==false:
             FP += 1
-        elif pred=='false' and gold=='true':
+        elif pred==false and gold==true:
             FN += 1
-        elif pred=='false' and gold=='false':
+        elif pred==false and gold==false:
             TN += 1
 
     print( "RESULT Confusion matrix")
@@ -179,7 +169,6 @@ for name, ds in all_datasets:
     print(f"RESULT RAW DATA TO: {save_path}")
     ds['test'].to_csv(save_path,index=None)
     evaluate_on_ds(ds)
-    
 
 #s="Says the Annies List political group supports third-trimester abortions on demand."
 #s="Building a wall on the U.S.-Mexico border will take literally years."
@@ -188,5 +177,6 @@ for name, ds in all_datasets:
 #outs = model.generate(input_ids = iids)
 #print(f"prompt: {s}")
 #print(f"result: {tokenizer.decode(outs[0], skip_special_tokens=True)}")
+
 
 
